@@ -15,9 +15,9 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <a class="navbar-brand" href="#"> Productos </a>
     
-
+    </nav>  
     <!-- Navegación -->
-    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <a class="navbar-brand" href="#"> Productos App </a>
     </nav>
 
@@ -28,50 +28,57 @@
             <div class="medida-1">
                 <div class="tarjeta">
                     <div class="tarjeta-header">
-                        <h4>Agregar Producto</h4> 
+                        <h4 style="text-align: center;">Agregar Producto</h4> 
                     </div>
+                    <br> 
+                    <div class="card border-light mb-3" style="max-width: 20rem; margin: 0 auto;">
                     <form id="producto-formulario" class="tarjeta-body">
-                        <div class="grupo-formulario">
+                        <br>
+                        <div class="grupo-formulario" style="width: 250px; margin: 0 auto;">
                             <input 
                             type="text"
                             id="nombre"
                             placeholder="Nombre de Producto"
-                            class="control-formulario"
+                            class="form-control"
                             />
                         </div>
-                        <div class="grupo-formulario">
+                        <br>
+                        <div class="grupo-formulario" style="width: 250px; margin: 0 auto;">
                             <input 
                             type="number"
                             id="precio"
                             step="0.01"
                             placeholder="Precio de Producto"
-                            class="control-formulario"
+                            class="form-control"
                             />
                         </div>
-                        <div class="grupo-formulario">
+                        <br>
+                        <div class="grupo-formulario" style="width: 250px; margin: 0 auto;">
                             <input 
                             type="number"
                             id="año"
                             step="1"
                             value="2022"
-                            class="control-formulario"
+                            class="form-control"
                             />
                         </div>
+                        <br>
                         <input
                         type="submit"
                         value="Guardar"
-                        class="btn btn-primario btn-bloque"
-                        />
-
+                        class="btn btn-success btn-bloque"
+                        style="margin-left: 30%;"
+                        />  
                     </form>
-
+                    <br>
+                    </div>
                 </div>
             </div>
             <!-- Lista de Productos -->
             <div id="producto-lista" class="medida-3"></div>
         </div>
     </div>
-    <script src="App.js" type="module"></script>
+    <script src="App.js"></script>
 </body>
 </html> 
 

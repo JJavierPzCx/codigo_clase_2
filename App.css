@@ -14,3 +14,13 @@ background: green;
     background: red;
 }
 
+@media (min-width: 768px){
+    .formulario{
+        background-color: var(black);
+        width: min(60 rem, 100%);
+        margin: 0 auto;
+        padding: 2rem;
+        border-radius: 1rem;
+        grid-column: 1 /3;
+    }
+}
